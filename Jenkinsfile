@@ -14,9 +14,9 @@ pipeline {
     }
 
     environment {
-        SONARQUBE_URL = "sonarqube:9000"
-        SONAR_TOKEN = "sqp_0f5cf99a252de45ed5cc53e645d53dd0ce08d47c"
-        PROJECT_KEY = "digger"
+        SONARQUBE_URL = 'sonarqube:9000'
+        SONAR_TOKEN = 'sqp_0f5cf99a252de45ed5cc53e645d53dd0ce08d47c'
+        PROJECT_KEY = 'digger'
     }
 
     stages {
