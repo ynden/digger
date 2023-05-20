@@ -43,7 +43,6 @@ pipeline {
                     docker run \
                         --rm \
                         -e SONAR_HOST_URL="http://${SONARQUBE_URL}" \
-                        -e SONAR_SCANNER_OPTS="-Dsonar.projectKey=${PROJECT_KEY}" \
                         -e SONAR_TOKEN="${SONAR_TOKEN}" \
                         -v "$(pwd)/:/usr/src" \
                         --network jenkins_shared-network \
