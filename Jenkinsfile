@@ -43,7 +43,7 @@ pipeline {
                     --rm \
                     -e SONAR_HOST_URL='http://${SONARQUBE_URL}' \
                     -e SONAR_SCANNER_OPTS='-Dsonar.projectKey=${PROJECT_KEY}' \
-                    -e SONAR_TOKEN='${SONAR_TOKEN}' \
+                    -e SONAR_TOKEN='sqp_0f5cf99a252de45ed5cc53e645d53dd0ce08d47c' \
                     -v '$(pwd)/:/usr/src' \
                     sonarsource/sonar-scanner-cli
             """
