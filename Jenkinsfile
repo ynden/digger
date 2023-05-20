@@ -46,6 +46,7 @@ pipeline {
                         -e SONAR_SCANNER_OPTS="-Dsonar.projectKey=${PROJECT_KEY}" \
                         -e SONAR_TOKEN="${SONAR_TOKEN}" \
                         -v "$(pwd)/:/usr/src" \
+                        --network jenkins_shared-network
                         sonarsource/sonar-scanner-cli
                 '''
             }
